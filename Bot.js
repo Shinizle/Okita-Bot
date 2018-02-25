@@ -9,8 +9,8 @@ client.on('message', message => {
     if (message.content === ">hi") {
     	message.reply('iya sayang');
   	}
-    else if (message.content === ">asyik") {
-    	message.reply('https://goo.gl/rMfZa2');
+    else if (message.content === ">opop") {
+    	message.content('https://goo.gl/qM3x9z');
   	}
 });
 
