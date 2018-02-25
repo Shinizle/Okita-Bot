@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('iya sayang');
   	}
     else if (message.content === ">opop") {
-    	message.content('https://goo.gl/qM3x9z');
+    	message.reply('https://goo.gl/qM3x9z');
   	}
 });
 
