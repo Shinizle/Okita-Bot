@@ -12,6 +12,9 @@ client.on('message', message => {
     else if (message.content === ">opop") {
     	message.reply('https://goo.gl/qM3x9z');
   	}
+    else if (message.content === ">addrole Fire") {
+    	member.addRole(Fire).catch(console.error);
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
