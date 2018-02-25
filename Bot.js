@@ -9,6 +9,9 @@ client.on('message', message => {
     if (message.content === ">hi") {
     	message.reply('iya sayang');
   	}
+    else if (message.content === ">asyik") {
+    	message.reply('https://goo.gl/rMfZa2');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
