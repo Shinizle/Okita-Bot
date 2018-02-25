@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '@Okita#7672 ') {
+    if (message.content === '>Hi') {
     	message.reply('iya sayang');
   	}
 });
