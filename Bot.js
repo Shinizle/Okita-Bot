@@ -12,16 +12,8 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
 client.on('ready', () => {
   console.log('I am ready!');
 });
-
-client.on('message', message => {
-    if (message.content === ">hi") {
-    	message.reply('iya sayang');
-  	}
-    else if (message.content === ">opop") {
-    	message.reply('https://goo.gl/qM3x9z');
-  	}
     var message = '';
-    else if (m.content.startsWith(">avatar")) {
+    if (m.content.startsWith(">avatar")) {
         if (m.content.indexOf(' ') !== -1) {
             if (m.mentions) {
                 for (var user of m.mentions) {
@@ -37,10 +29,15 @@ client.on('message', message => {
             message = m.author.avatarURL;
             bot.sendMessage(m.channel, message);
         }
-    else if (message.content === ">addrole Fire") {
-    	member.addRole(role).catch(console.error);
-  	}
-});
+    client.on('message', message => {
+        if (message.content === ">hi") {
+          message.reply('iya sayang');
+        }
+        else if (message.content === ">opop") {
+          message.reply('https://goo.gl/qM3x9z');
+        }
+
+    });
 
 
 // THIS  MUST  BE  THIS  WAY
