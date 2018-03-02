@@ -20,10 +20,24 @@ client.on('message', message => {
     else if (message.content === ">opop") {
     	message.reply('https://goo.gl/qM3x9z');
   	}
-    else if (message.content === '>avatar') {
-       // Send the user's avatar URL
-       message.reply(message.author.avatarURL);
-     }
+    var message = '';
+    else if (m.content.startsWith(">avatar")) {
+        if (m.content.indexOf(' ') !== -1) {
+            if (m.mentions) {
+                for (var user of m.mentions) {
+                    message += user.avatarURL + '\n';
+                }
+                message.slice(0, -2);
+                bot.sendMessage(m.channel, message);
+            } else {
+                message = m.author.avatarURL;
+                bot.sendMessage(m.channel, message);
+            }
+        } else {
+            message = m.author.avatarURL;
+            bot.sendMessage(m.channel, message);
+        }
+}
     else if (message.content === ">addrole Fire") {
     	member.addRole(role).catch(console.error);
   	}
