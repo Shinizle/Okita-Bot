@@ -20,18 +20,15 @@ client.on('message', message => {
     else if (message.content === ">opop") {
     	message.reply('https://goo.gl/qM3x9z');
   	}
+    else if (message.content === '>avatar') {
+       // Send the user's avatar URL
+       message.reply(message.author.avatarURL);
+     }
     else if (message.content === ">addrole Fire") {
-    	member.addRole(Fire).catch(console.error);
+    	member.addRole(role).catch(console.error);
   	}
 });
 
-client.on('message', message => {
-  // If the message is "what is my avatar"
-  if (message.content === '>avatar') {
-    // Send the user's avatar URL
-    message.reply(message.author.avatarURL);
-  }
-});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
