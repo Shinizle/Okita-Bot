@@ -37,7 +37,6 @@ client.on('message', message => {
             message = m.author.avatarURL;
             bot.sendMessage(m.channel, message);
         }
-}
     else if (message.content === ">addrole Fire") {
     	member.addRole(role).catch(console.error);
   	}
