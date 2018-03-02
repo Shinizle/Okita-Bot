@@ -29,8 +29,5 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
       }
     });
 
-    });
-
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
