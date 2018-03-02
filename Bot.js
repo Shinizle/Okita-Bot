@@ -20,13 +20,10 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         else if (message.content === ">opop") {
           message.reply('https://goo.gl/qM3x9z');
         }
-        // Create an event listener for messages
-    client.on('message', message => {
-      // If the message is "what is my avatar"
-      if (message.content === ">ava) {
+        else if (message.content === ">ava) {
         // Send the user's avatar URL
         message.reply(message.author.avatarURL + '\n');
-      }
+        }
     });
 
 // THIS  MUST  BE  THIS  WAY
