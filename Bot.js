@@ -26,7 +26,7 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
       // If the message is "what is my avatar"
       if (message.content === ">ava") {
         // Send the user's avatar URL
-        message.reply(message.author.avatarURL);
+        message.reply(message.author.avatarURL + '\n');
       }
     });
 
