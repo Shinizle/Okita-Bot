@@ -17,11 +17,20 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         if (message.content === ">hi") {
           message.reply('iya sayang');
         }
-        else if (message.content === ">opop") {
+        else if (message.content === ">op") {
           message.reply('https://goo.gl/qM3x9z');
         }
         else if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
           message.reply('woof woof hehe');
+        }
+    });
+    client.on('message', message => {
+        // If the message is '!rip'
+        if (message.content === '>opop') {
+            // Create the attachment using Attachment
+            const attachment = new Attachment('https://goo.gl/qM3x9z');
+            // Send the attachment in the message channel
+            message.channel.send(attachment);
         }
     });
     // Create an event listener for messages
