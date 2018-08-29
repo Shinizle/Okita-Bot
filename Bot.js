@@ -28,7 +28,7 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         // If the message is '!rip'
         if (message.content === '>opop') {
             // Create the attachment using Attachment
-            const attachment = new Attachment('https://goo.gl/qM3x9z');
+            const attachment = new Attachment('https://cdn.discordapp.com/attachments/417293593514999820/417314511041855488/zRj4H2Jh.png');
             // Send the attachment in the message channel
             message.channel.send(attachment);
         }
