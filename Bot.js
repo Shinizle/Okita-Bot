@@ -23,6 +23,9 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         else if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
           message.reply('woof woof hehe');
         }
+        else if (message.content === ">helo") {
+          message.reply('https://goo.gl/H785Cy');
+        }
     });
     // Create an event listener for messages
     client.on('message', message => {
