@@ -20,6 +20,9 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         else if (message.content === ">opop") {
           message.reply('https://goo.gl/qM3x9z');
         }
+        else if (message.content === "anjing") {
+          message.reply('woof woof hehe');
+        }
     });
     // Create an event listener for messages
     client.on('message', message => {
