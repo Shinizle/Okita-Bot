@@ -20,7 +20,7 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         else if (message.content === ">opop") {
           message.reply('https://goo.gl/qM3x9z');
         }
-        else if (message.content === "anjing" || message.content === "njir" message.content === "anjir") {
+        else if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
           message.reply('woof woof hehe');
         }
     });
