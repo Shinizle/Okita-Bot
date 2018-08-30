@@ -1,5 +1,5 @@
 // Extract the required classes from the discord.js module
-const { Discord, Client, Attachment } = require('discord.js');
+const { Discord, Attachment } = require('discord.js');
 
 // Create an instance of a Discord client
 const client = new Discord.Client();
