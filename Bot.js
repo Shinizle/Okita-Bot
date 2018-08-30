@@ -26,9 +26,9 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         else if (message.content === ">helo") {
           message.reply('https://goo.gl/H785Cy');
         }
-        else if (message.content === ">ok") {
-          file: "https://goo.gl/H785Cy";
-        }
+        message.channel.send(">ok", {
+            file: "https://goo.gl/H785Cy" // Or replace with FileOptions object
+        });
     });
     // Create an event listener for messages
     client.on('message', message => {
