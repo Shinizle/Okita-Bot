@@ -1,8 +1,8 @@
 // Extract the required classes from the discord.js module
-const { Client, Attachment } = require('discord.js');
+const { Discord, Client, Attachment } = require('discord.js');
 
 // Create an instance of a Discord client
-const client = new Client();
+const client = new Discord.Client();
 
 // The token of your bot - https://discordapp.com/developers/applications/me
 const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
