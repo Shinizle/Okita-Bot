@@ -34,6 +34,15 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
             message.channel.send(attachment);
         }
     });
+    client.on('message', message => {
+        // If the message is '!rip'
+        if (message.content === '!rip') {
+            // Create the attachment using Attachment
+            const attachment = new Attachment('./rip.png');
+            // Send the attachment in the message channel with a content
+            message.channel.send(`${message.author},`, attachment);
+        }
+    });
     // Create an event listener for messages
     client.on('message', message => {
       // If the message is "what is my avatar"
