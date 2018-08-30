@@ -26,6 +26,13 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         else if (message.content === ">helo") {
           message.reply('https://goo.gl/H785Cy');
         }
+        // If the message is '!rip'
+        if (message.content === '>rip') {
+            // Create the attachment using Attachment
+            const attachment = new Attachment('https://i.imgur.com/w3duR07.png');
+            // Send the attachment in the message channel
+            message.channel.send(attachment);
+        }
     });
     // Create an event listener for messages
     client.on('message', message => {
