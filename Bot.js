@@ -31,6 +31,9 @@ client.on('message', message => {
     }
     // If the message is '!rip'
     if (message.content === "!opop") {
+        message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/417293593514999820/417314511041855488/zRj4H2Jh.png"]});
+    }
+    if (message.content === "!hello") {
         message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/484506814218764296/Stamp45.png"]});
     }
 });
