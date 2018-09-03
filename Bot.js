@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 // The token of your bot - https://discordapp.com/developers/applications/me
-const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.Dm4wSQ.WpAyk52zz86idjc1xbsEZ0HGmZU';
+const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.Dm4xhQ.kkq3wftOzpPsuCA3G0wfw7Ikww0';
 
 // The ready event is vital, it means that your bot will only start reacting to information
 // from Discord _after_ ready is emitted
@@ -28,12 +28,12 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.Dm4wSQ.WpAyk52zz86idjc1xbsEZ0HGmZU';
             message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/484506814218764296/Stamp45.png"]});
         }
         // If the message is '!rip'
-        if (message.content === '!rip') {
+        //if (message.content === '!rip') {
             // Create the attachment using Attachment
-            const attachment = new Attachment('./rip.png');
+            //const attachment = new Attachment('./rip.png');
             // Send the attachment in the message channel with a content
-            message.channel.send(`${message.author},`, attachment);
-        }
+            //message.channel.send(`${message.author},`, attachment);
+        //}
     });
 
 // THIS  MUST  BE  THIS  WAY
