@@ -30,7 +30,7 @@ client.on('message', message => {
           message.reply('https://goo.gl/H785Cy');
     }
     // If the message is '!rip'
-    if (message.content.startWith ("!opop")) {
+    if (message.content === "!opop") {
         message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/484506814218764296/Stamp45.png"]});
     }
 });
