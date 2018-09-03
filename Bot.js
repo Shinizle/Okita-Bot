@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 // The token of your bot - https://discordapp.com/developers/applications/me
-const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
+const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.Dm4wSQ.WpAyk52zz86idjc1xbsEZ0HGmZU';
 
 // The ready event is vital, it means that your bot will only start reacting to information
 // from Discord _after_ ready is emitted
@@ -14,13 +14,13 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         if (message.content === ">hi") {
           message.reply('iya sayang');
         }
-        else if (message.content === ">opop") {
+        if (message.content === ">opop") {
           message.reply('https://goo.gl/qM3x9z');
         }
-        else if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
+        if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
           message.reply('woof woof hehe');
         }
-        else if (message.content === ">helo") {
+        if (message.content === ">helo") {
           message.reply('https://goo.gl/H785Cy');
         }
         // If the message is '!rip'
