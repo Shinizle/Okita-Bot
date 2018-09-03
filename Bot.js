@@ -20,6 +20,9 @@ client.on('message', message => {
         // Send the attachment in the message channel with a content
         message.channel.send(`${message.author},`, attachment);
     }
+    if (message.content === ">opop") {
+        message.reply('https://goo.gl/qM3x9z');
+    }
 });
 
 // Log our bot in using the token from https://discordapp.com/developers/applications/me
