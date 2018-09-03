@@ -27,8 +27,6 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
         if (message.content.startWith ("!opop")) {
             message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/484506814218764296/Stamp45.png"]});
         }
-    });
-    client.on('message', message => {
         // If the message is '!rip'
         if (message.content === '!rip') {
             // Create the attachment using Attachment
@@ -36,14 +34,6 @@ const token = 'NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w';
             // Send the attachment in the message channel with a content
             message.channel.send(`${message.author},`, attachment);
         }
-    });
-    // Create an event listener for messages
-    client.on('message', message => {
-      // If the message is "what is my avatar"
-      if (message.content === ">ava") {
-        // Send the user's avatar URL
-        message.reply(message.author.avatarURL + '\n');
-      }
     });
 
 // THIS  MUST  BE  THIS  WAY
