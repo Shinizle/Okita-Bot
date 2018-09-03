@@ -1,26 +1,40 @@
-// Extract the required classes from the discord.js module
-const { Client, Attachment } = require('discord.js');
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-// Create an instance of a Discord client
-const client = new Client();
+// The token of your bot - https://discordapp.com/developers/applications/me
+const BOT_TOKEN = 'NDE3Mjk0MjgzMDkyMTMxODQw.Dm4xhQ.kkq3wftOzpPsuCA3G0wfw7Ikww0';
 
-/**
- * The ready event is vital, it means that only _after_ this will your bot start reacting to information
- * received from Discord
- */
-client.on('ready', () => {
-  console.log('I am ready!');
-});
+// The ready event is vital, it means that your bot will only start reacting to information
+// from Discord _after_ ready is emitted
+    client.on('ready', () => {
+      console.log('I am ready!');
+    });
+    
+    client.on('message', message => {
+        if (message.content === ">hi") {
+          message.reply('iya sayang');
+        }
+        if (message.content === ">opop") {
+          message.reply('https://goo.gl/qM3x9z');
+        }
+        if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
+          message.reply('woof woof hehe');
+        }
+        if (message.content === ">helo") {
+          message.reply('https://goo.gl/H785Cy');
+        }
+        // If the message is '!rip'
+        if (message.content.startWith ("!opop")) {
+            message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/484506814218764296/Stamp45.png"]});
+        }
+        // If the message is '!rip'
+        //if (message.content === '!rip') {
+            // Create the attachment using Attachment
+            //const attachment = new Attachment('./rip.png');
+            // Send the attachment in the message channel with a content
+            //message.channel.send(`${message.author},`, attachment);
+        //}
+    });
 
-client.on('message', message => {
-    // If the message is '!rip'
-    if (message.content === '!rip') {
-        // Create the attachment using Attachment
-        const attachment = new Attachment('https://i.imgur.com/w3duR07.png');
-        // Send the attachment in the message channel with a content
-        message.channel.send(`${message.author},`, attachment);
-    }
-});
-
-// Log our bot in using the token from https://discordapp.com/developers/applications/me
-client.login('NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w');
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
