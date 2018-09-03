@@ -23,6 +23,16 @@ client.on('message', message => {
     if (message.content === ">opop") {
         message.reply('https://goo.gl/qM3x9z');
     }
+    if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
+          message.reply('woof woof hehe');
+        }
+    if (message.content === ">helo") {
+          message.reply('https://goo.gl/H785Cy');
+    }
+    // If the message is '!rip'
+    if (message.content.startWith ("!opop")) {
+        message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/484506814218764296/Stamp45.png"]});
+    }
 });
 
 // Log our bot in using the token from https://discordapp.com/developers/applications/me
