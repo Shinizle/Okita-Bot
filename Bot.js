@@ -11,7 +11,10 @@ const client = new Client();
 client.on('ready', () => {
   console.log('I am ready!');
 });
-bot.user.setPresence({ game: { name: 'with Ai', type: "streaming", url: "https://www.twitch.tv/monstercat"}});
+// Set the client user's activity
+client.user.setActivity('discord.js', { type: 'WATCHING' })
+  .then(presence => console.log(`Activity set to ${presence.game.name}`))
+  .catch(console.error);
 client.on('message', message => {
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
           message.reply('woof woof hehe');
