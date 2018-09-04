@@ -53,6 +53,9 @@ client.on('message', message => {
     if (message.content === "!hawawa") {
         message.channel.send("", { files: ["https://pa1.narvii.com/6521/08fb8fe3ec5f63a5409579c67715e69651fd2410_hq.gif"]});
     }
+    if (message.content === "!exited") {
+        message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/486430240638238742/KannaExcited.gif"]});
+    }
     //if (message.content === "!otsu") {
         //message.channel.send("", { files: [""]});
     //}
