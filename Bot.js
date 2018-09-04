@@ -16,19 +16,9 @@ client.on('message', message => {
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
        message.reply('woof woof hehe');
     }
-    if (message.content === "!event") {
-          message.reply("```September Schedule: 
-
-          8/31 - 9/9: The Other Side of the Sky
-
-          9/9 - 9/15: Ranger Sign Bravo! (rerun)
-
-          9/16 - 9/22: Rise of the Beasts
-
-          9/23 - 9/29: Xeno Sagittarius (second run, no new weapon)
-
-          9/30 - 10/8: New story event```");
-        }
+    if (message.content === "!test") {
+          message.reply("```September Schedule <br> 8/31 - 9/9: The Other Side of the Sky <br>9/9 - 9/15: Ranger Sign Bravo! (rerun) <br> 9/16 - 9/22: Rise of the Beasts <br> 9/23 - 9/29: Xeno Sagittarius (second run, no new weapon) <br> 9/30 - 10/8: New story event```");
+    }
     // If the message is '!rip'
     if (message.content === "!opop") {
         message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/417293593514999820/417314511041855488/zRj4H2Jh.png"]});
