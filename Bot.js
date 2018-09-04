@@ -14,7 +14,20 @@ client.on('ready', () => {
 });
 client.on('message', message => {
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
-          message.reply('woof woof hehe');
+       message.reply('woof woof hehe');
+    }
+    if (message.content === "!event") {
+          message.reply("```September Schedule: 
+
+          8/31 - 9/9: The Other Side of the Sky
+
+          9/9 - 9/15: Ranger Sign Bravo! (rerun)
+
+          9/16 - 9/22: Rise of the Beasts
+
+          9/23 - 9/29: Xeno Sagittarius (second run, no new weapon)
+
+          9/30 - 10/8: New story event```");
         }
     // If the message is '!rip'
     if (message.content === "!opop") {
