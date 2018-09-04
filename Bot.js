@@ -16,8 +16,8 @@ client.on('message', message => {
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
        message.reply('woof woof hehe');
     }
-    if (message.content === "!test") {
-          message.reply("Hello there.\nI am on a second line ;-)");
+    if (message.content === "!event") {
+          message.reply("\nI ```September Schedule \nI  \nI 8/31 - 9/9: The Other Side of the Sky \nI 9/9 - 9/15: Ranger Sign Bravo! (rerun) \nI  9/16 - 9/22: Rise of the Beasts \nI  9/23 - 9/29: Xeno Sagittarius (second run, no new weapon) \nI  9/30 - 10/8: New story event```");
     }
     // If the message is '!rip'
     if (message.content === "!opop") {
