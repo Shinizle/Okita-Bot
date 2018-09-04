@@ -56,6 +56,9 @@ client.on('message', message => {
     if (message.content === "!exited") {
         message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/486430240638238742/KannaExcited.gif"]});
     }
+    if (message.content === "!asyik") {
+        message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/486431343123759104/ezgif-4-585ef23bbe.gif"]});
+    }
     //if (message.content === "!otsu") {
         //message.channel.send("", { files: [""]});
     //}
