@@ -10,7 +10,7 @@ const client = new Client();
  */
 client.on('ready', () => {
   console.log('I am ready!');
-  bot.user.setPresence({ game: { name: 'with Ai', type: "streaming", url: "https://www.twitch.tv/monstercat"}});
+  client.user.setPresence({ game: { name: 'with Ai', type: "streaming", url: "https://www.twitch.tv/monstercat"}});
 });
 client.on('message', message => {
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
