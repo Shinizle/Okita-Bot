@@ -10,7 +10,9 @@ const client = new Client();
  */
 client.on('ready', () => {
   console.log('I am ready!');
-  bot.user.setStatus('available')
+});
+bot.on('ready', () => {
+    bot.user.setStatus('available')
     bot.user.setPresence({
         game: {
             name: 'with Ai',
