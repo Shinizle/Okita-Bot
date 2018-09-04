@@ -11,10 +11,7 @@ const client = new Client();
 client.on('ready', () => {
   console.log('I am ready!');
 });
-// Set the client user's activity
-client.user.setActivity('discord.js', { type: 'WATCHING' })
-  .then(presence => console.log(`Activity set to ${presence.game.name}`))
-  .catch(console.error);
+client.user.setStatus('online', 'with Ai');
 client.on('message', message => {
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
           message.reply('woof woof hehe');
