@@ -16,6 +16,9 @@ client.on('message', message => {
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
        message.reply('woof woof hehe');
     }
+    if (message.content === "!sticker" || message.content === "njir" || message.content === "anjir") {
+       message.reply('```Prefix: ! \n \n Command: \n opop, hello, otsu, ok, dokkan, teehe, letsgo, aye, notgood, anoo, hawawa, exited, asyik, uhuy, pensi, yay```');
+    }
     if (message.content === "!event") {
           message.reply("\n ```September Schedule: \n  \n● 8/31 - 9/9: The Other Side of the Sky \n● 9/9 - 9/15: Ranger Sign Bravo! (rerun) \n● 9/16 - 9/22: Rise of the Beasts \n● 9/23 - 9/29: Xeno Sagittarius (second run, no new weapon) \n● 9/30 - 10/8: New story event```");
     }
