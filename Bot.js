@@ -62,6 +62,9 @@ client.on('message', message => {
     if (message.content === "!uhuy") {
         message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/486431833496485888/396575918593802240.gif"]});
     }
+    if (message.content === "!pensi") {
+        message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/483868862987894799/486432106411589642/20-31-25-CXhzdoQ_d.jpg"]});
+    }
     //if (message.content === "!otsu") {
         //message.channel.send("", { files: [""]});
     //}
