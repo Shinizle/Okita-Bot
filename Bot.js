@@ -11,10 +11,7 @@ const client = new Client();
 client.on('ready', () => {
   console.log('I am ready!');
 });
-client.user.setActivity("with Ai", {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/monstercat"
-});
+bot.user.setPresence({ game: { name: 'with Ai', type: "streaming", url: "https://www.twitch.tv/monstercat"}});
 client.on('message', message => {
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
           message.reply('woof woof hehe');
