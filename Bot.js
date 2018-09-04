@@ -11,34 +11,11 @@ const client = new Client();
 client.on('ready', () => {
   console.log('I am ready!');
 });
-bot.on('ready', () => {
-    bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'with Ai',
-            type: "STREAMING",
-            url: "http://www.shinizle.tech/"
-        }
-    });
-});
 
 client.on('message', message => {
-    // If the message is '!rip'
-    if (message.content === '>rip') {
-        // Create the attachment using Attachment
-        const attachment = new Attachment('https://i.imgur.com/w3duR07.png');
-        // Send the attachment in the message channel with a content
-        message.channel.send(`${message.author},`, attachment);
-    }
-    if (message.content === ">opop") {
-        message.reply('https://goo.gl/qM3x9z');
-    }
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
           message.reply('woof woof hehe');
         }
-    if (message.content === ">helo") {
-          message.reply('https://goo.gl/H785Cy');
-    }
     // If the message is '!rip'
     if (message.content === "!opop") {
         message.channel.send("", { files: ["https://cdn.discordapp.com/attachments/417293593514999820/417314511041855488/zRj4H2Jh.png"]});
