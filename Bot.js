@@ -10,7 +10,7 @@ const client = new Client();
  */
 client.on('ready', () => {
   console.log('I am ready!');
-  client.user.setPresence({ game: { name: 'with Ai', type: "playing", url: "http://www.shinizle.tech/"}});
+  client.user.setPresence({ game: { name: 'with Ai', type: "GAME", url: "http://www.shinizle.tech/"}});
 });
 client.on('message', message => {
     if (message.content === "anjing" || message.content === "njir" || message.content === "anjir") {
