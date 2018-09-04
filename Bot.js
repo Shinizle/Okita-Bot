@@ -10,6 +10,14 @@ const client = new Client();
  */
 client.on('ready', () => {
   console.log('I am ready!');
+  bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'with Ai',
+            type: "STREAMING",
+            url: "http://www.shinizle.tech/"
+        }
+    });
 });
 
 client.on('message', message => {
@@ -60,13 +68,12 @@ client.on('message', message => {
     if (message.content === "!anoo") {
         message.channel.send("", { files: ["https://gbf.wiki/images/d/dd/Stamp64.png"]});
     }
-  if (message.content === "!hawawa") {
+    if (message.content === "!hawawa") {
         message.channel.send("", { files: ["https://pa1.narvii.com/6521/08fb8fe3ec5f63a5409579c67715e69651fd2410_hq.gif"]});
     }
     //if (message.content === "!otsu") {
         //message.channel.send("", { files: [""]});
     //}
 });
-
 // Log our bot in using the token from https://discordapp.com/developers/applications/me
 client.login('NDE3Mjk0MjgzMDkyMTMxODQw.DXrFcA.d9iEtK-bJ_5HBjuYQug487YSJ9w');
